@@ -12,7 +12,7 @@ h3 {
 }
 
 .box {
-    min-height: 120px;
+    height: 120px;
 }
 
 .button {
@@ -21,16 +21,9 @@ h3 {
 
 .twitter {
     text-align: center;
+    margin-top: 30px;
 }
 
-.tweegger {
-    width: 20%;
-    height: 35px;
-    background-color: #55acee;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 20px;
-}
 
 a {
     text-decoration: none;
