@@ -22,7 +22,7 @@ function createTweet(input) {
         var tweet = tweetLink + encodeURIComponent(tweetText);
         $('.quote').text(quoteText);
         $('.author').text("Author: " + quoteAuthor);
-        $('.tweet').attr('href', tweet);
+        $('.btn').attr('href', tweet);
     }
 }
 $(document).ready(function() {
