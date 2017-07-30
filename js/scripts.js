@@ -5,10 +5,12 @@ $(document).ready(function () {
 
     $('#search').click(searchCountries);
     
+<<<<<<< HEAD
     $('#country-name').keyup(function(event) {
         if(event.keyCode == 13) {
            searchCountries();
-        }
+        // jeżeli chcesz szukać po każdym wpisanym znaku
+        // searchCountries();
     });
 
     function searchCountries() {
