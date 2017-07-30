@@ -5,9 +5,9 @@ $(document).ready(function () {
 
     $('#search').click(searchCountries);
     
-    $('#search').keyup(function(event){
-        if(event.keyCode == 13){
-            $('#search').click(searchCountries);
+    $('#country-name').keyup(function(event) {
+        if(event.keyCode == 13) {
+           searchCountries();
         }
     });
 
@@ -23,25 +23,23 @@ $(document).ready(function () {
     }
 
     function showCountriesList(resp) {
+        var result = '';
+
         countriesList.empty();
         resp.forEach(function (item) {
-            var countryName = $('.country-name')
             var countryCode = item.alpha3Code;
-            var capital = $('.capital');
-            var lang = $('.lang');
-            var area = $('.area');
-            var population = $('#population');
-            var currencies = $('#currencies');
-            $(countryName).text('Country: ' + item.name);
-            $('img').attr({
-                src: "https://restcountries.eu/data/" + countryCode.toLowerCase() + ".svg"
-            }).appendTo('img').css("width", "100");
-            $(capital).text('Capital: ' + item.capital).prepend(capital);
-            $(lang).text('Languages: ' + item.languages).appendTo('.lang');
-            $(area).text('Area: ' + item.area).appendTo('.area');
-            $(population).text('Population: ' + item.population).appendTo('#population');
-            $(currencies).text('Currencies: ' + item.currencies).appendTo('#currencies');
+
+            result += '\
+                <li> \
+                    <img width="100" src="' + "https://restcountries.eu/data/" + countryCode.toLowerCase() + ".svg" + '"> \
+                    <h3 class="country-name">Country: ' + item.name + '</h3> \
+                    <h3 class="capital">Capital: ' + item.capital + '</h3> \
+                    <h3 class="lang">Languages: ' + item.languages + '</h3> \
+                </li> \
+                ';
         });
+
+        countriesList.append(result);
     }
 
 });
