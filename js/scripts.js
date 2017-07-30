@@ -10,6 +10,7 @@ $(document).ready(function () {
            searchCountries();
         // jeżeli chcesz szukać po każdym wpisanym znaku
         // searchCountries();
+        }
     });
 
     function searchCountries() {
