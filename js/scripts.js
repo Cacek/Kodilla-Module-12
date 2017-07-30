@@ -4,8 +4,7 @@ $(document).ready(function () {
     var flag = 'https://restcountries.eu/data/col.svg'
 
     $('#search').click(searchCountries);
-    
-<<<<<<< HEAD
+
     $('#country-name').keyup(function(event) {
         if(event.keyCode == 13) {
            searchCountries();
