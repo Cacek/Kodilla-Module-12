@@ -1,1 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+* {
+    font-family: 'Quicksand', sans-serif;
+}
 
+body {
+    background-color: #639FBF;
+    overflow-x: hidden;
+}
+
+body h1 {
+    background-color: #213540;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #e6e7e8;
+}
+
+h2 {
+    background-color: #426A7F;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.create-column {
+    margin: 10px;
+}
+
+.column {
+    width: 25%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.add-card {
+    width: 40%;
+    background-color: #e6e7e8;
+    color: #06000a;
+    margin-left: 20px;
+}
+
+.btn-delete {
+    width: 30px;
+    height: 30px;
+    background-color: #77BFE5;
+    color: #e6e6e8;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #e6e7e8;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    min-height: 60px;
+}
+
+.card-description {
+    color: #000;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-placeholder {
+    color: red;
+}
+
+[class*="col-"] {
+    width: 100%;
+    padding: 12px;
+    float: left;
+}
